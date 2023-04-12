@@ -194,7 +194,7 @@
                 for (let i = 0; i < reactantOneLength; i++) {
                   reactantOnehtml += `
                           <p draggable="true" class="${reactantOne.content[i].atom}">
-                            <img src="http://localhost:5000/assets/${reactantOne.content[i].atom}.png" />
+                            <img src="req.hostname/assets/${reactantOne.content[i].atom}.png" />
                           </p>
                           `;
                 }
@@ -205,7 +205,7 @@
                 for (let i = 0; i < reactantTwoLength; i++) {
                   reactantTwohtml += `
                 <p draggable="true" class="${reactantTwo.content[i].atom}">
-                  <img src="http://localhost:5000/assets/${reactantTwo.content[i].atom}.png" />
+                  <img src="req.hostname/assets/${reactantTwo.content[i].atom}.png" />
                 </p>
                 `;
                 }
@@ -216,7 +216,7 @@
                 for (let i = 0; i < reactantThreeLength; i++) {
                   reactantThreehtml += `
                 <p draggable="true" class="${reactantThree.content[i].atom}">
-                  <img src="http://localhost:5000/assets/${reactantThree.content[i].atom}.png" />
+                  <img src="req.hostname/assets/${reactantThree.content[i].atom}.png" />
                 </p>
                 `;
                 }
@@ -415,7 +415,7 @@
       }
 
       function changePage() {
-        window.location = "http://localhost:5000/home-page";
+        window.location = "req.hostname/home-page";
       }
 
       function errorMessage(errorText) {
